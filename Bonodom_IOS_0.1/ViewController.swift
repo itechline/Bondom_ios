@@ -10,6 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var veznevtextfield: UITextField!
+    
+    @IBOutlet weak var kernevtextfield: UITextField!
+    
+    @IBOutlet weak var emailtextfield: UITextField!
+    
+    @IBOutlet weak var passwtextfield: UITextField!
+    
+    
+    @IBAction func switchregister(sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            veznevtextfield.hidden = false
+            kernevtextfield.placeholder = "Keresztnév"
+        } else {
+            veznevtextfield.hidden = true
+            kernevtextfield.placeholder = "Cégnév"
+        }
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
