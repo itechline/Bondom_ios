@@ -23,31 +23,31 @@ class ViewController: UIViewController {
     @IBAction func registerButton(sender: AnyObject) {
         var isFilled = true
         if (!isCompany) {
-            if (self.veznevtextfield.text == "") {
+            if (self.veznevtextfield.text!.isEmpty) {
                 isFilled = false
             }
         
-            if (self.kernevtextfield.text == "") {
+            if (self.kernevtextfield.text!.isEmpty) {
                 isFilled = false
             }
         
-            if (self.emailtextfield.text == "") {
+            if (self.emailtextfield.text!.isEmpty) {
                 isFilled = false
             }
         
-            if (self.passwtextfield.text == "") {
+            if (self.passwtextfield.text!.isEmpty) {
                 isFilled = false
             }
         } else {
-            if (self.kernevtextfield.text == "") {
+            if (self.kernevtextfield.text!.isEmpty) {
                 isFilled = false
             }
             
-            if (self.emailtextfield.text == "") {
+            if (self.emailtextfield.text!.isEmpty) {
                 isFilled = false
             }
             
-            if (self.passwtextfield.text == "") {
+            if (self.passwtextfield.text!.isEmpty) {
                 isFilled = false
             }
         }
@@ -56,6 +56,11 @@ class ViewController: UIViewController {
             print("OK")
         } else {
             print("NOT OK")
+            let alert = UIAlertView()
+            alert.title = "Hiba"
+            alert.message = "Töltsön ki minden mezőt helyesen!"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
         }
         
     }

@@ -10,6 +10,29 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passText: UITextField!
+    @IBAction func loginButton(sender: AnyObject) {
+        var isFilled = true
+        if (self.emailText.text!.isEmpty) {
+            isFilled = false
+        }
+        
+        if (self.passText.text!.isEmpty) {
+            isFilled = false
+        }
+        
+        if (isFilled) {
+            print("LOGIN OK")
+        } else {
+            print("LOGIN NOT OK")
+            let alert = UIAlertView()
+            alert.title = "Hiba"
+            alert.message = "Töltsön ki minden mezőt helyesen!"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
