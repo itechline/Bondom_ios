@@ -17,15 +17,58 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailtextfield: UITextField!
     
     @IBOutlet weak var passwtextfield: UITextField!
+
     
+    var isCompany = false
+    @IBAction func registerButton(sender: AnyObject) {
+        var isFilled = true
+        if (!isCompany) {
+            if (self.veznevtextfield.text == "") {
+                isFilled = false
+            }
+        
+            if (self.kernevtextfield.text == "") {
+                isFilled = false
+            }
+        
+            if (self.emailtextfield.text == "") {
+                isFilled = false
+            }
+        
+            if (self.passwtextfield.text == "") {
+                isFilled = false
+            }
+        } else {
+            if (self.kernevtextfield.text == "") {
+                isFilled = false
+            }
+            
+            if (self.emailtextfield.text == "") {
+                isFilled = false
+            }
+            
+            if (self.passwtextfield.text == "") {
+                isFilled = false
+            }
+        }
+        
+        if (isFilled) {
+            print("OK")
+        } else {
+            print("NOT OK")
+        }
+        
+    }
     
     @IBAction func switchregister(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             veznevtextfield.hidden = false
             kernevtextfield.placeholder = "Keresztnév"
+            isCompany = false
         } else {
             veznevtextfield.hidden = true
             kernevtextfield.placeholder = "Cégnév"
+            isCompany = true
         }
 
     }
