@@ -9,6 +9,9 @@
 import UIKit
 
 class ListEstateViewController: UIViewController {
+    @IBAction func IsFav(sender: UISwitch) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
