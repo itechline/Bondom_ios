@@ -363,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eR-2a-aD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="1108"/>
+            <point key="canvasLocation" x="1018" y="408"/>
         </scene>
         <!--ASZF-->
         <scene sceneID="fE6-8L-FRp">
@@ -491,7 +491,7 @@ Jászladány, 2016.05.20
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBC-DK-tsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="418"/>
+            <point key="canvasLocation" x="1712" y="-282"/>
         </scene>
         <!--ListEstates-->
         <scene sceneID="dE5-Yu-cF0">
@@ -624,7 +624,7 @@ Jászladány, 2016.05.20
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="962" y="1150"/>
+            <point key="canvasLocation" x="1698" y="518"/>
         </scene>
         <!--EstateDetailsInList-->
         <scene sceneID="lLD-a9-MiQ">
@@ -917,7 +917,7 @@ Jászladány, 2016.05.20
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dY3-93-pFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="1686"/>
+            <point key="canvasLocation" x="2415" y="658"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XEB-Ui-RgD">
@@ -936,6 +936,7 @@ Jászladány, 2016.05.20
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHG-F7-Aiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2478" y="1678"/>
         </scene>
     </scenes>
     <resources>

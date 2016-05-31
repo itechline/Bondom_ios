@@ -15,11 +15,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(sender: AnyObject) {
         var isFilled = true
-        if (self.emailText.text!.isEmpty) {
+        if (self.emailText.text == "") {
             isFilled = false
         }
         
-        if (self.passText.text!.isEmpty) {
+        if (self.passText.text == "") {
             isFilled = false
         }
         
