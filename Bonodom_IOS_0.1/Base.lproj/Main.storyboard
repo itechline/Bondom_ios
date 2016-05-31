@@ -498,12 +498,6 @@ Jászladány, 2016.05.20
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxi-6U-mKV">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="Gls-ac-zKD"/>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-gK-0ei">
                                 <rect key="frame" x="0.0" y="86" width="600" height="520"/>
                                 <subviews>
@@ -532,8 +526,12 @@ Jászladány, 2016.05.20
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-Dm-qnR">
+                                            <switch opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="heart_filled" offImage="heart_empty" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-Dm-qnR">
                                                 <rect key="frame" x="527" y="8" width="51" height="31"/>
+                                                <color key="onTintColor" red="1" green="0.1412239203" blue="0.085559258269999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="IsFav:" destination="9XW-1C-1Sb" eventType="valueChanged" id="lQu-4J-LGQ"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-pP-vaJ">
                                                 <rect key="frame" x="103" y="66" width="468" height="33"/>
@@ -573,6 +571,16 @@ Jászladány, 2016.05.20
                                     <constraint firstItem="uks-f2-vFZ" firstAttribute="leading" secondItem="LUe-gK-0ei" secondAttribute="leadingMargin" id="jLT-TF-aJc"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxi-6U-mKV">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="Gls-ac-zKD"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -593,6 +601,8 @@ Jászladány, 2016.05.20
     </scenes>
     <resources>
         <image name="bonodom_logo" width="125" height="125"/>
+        <image name="heart_empty" width="25" height="23"/>
+        <image name="heart_filled" width="25" height="23"/>
         <image name="main_house" width="320" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
