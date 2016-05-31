@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passText: UITextField!
+    
     @IBAction func loginButton(sender: AnyObject) {
         var isFilled = true
         if (self.emailText.text!.isEmpty) {
@@ -24,6 +25,8 @@ class LoginViewController: UIViewController {
         
         if (isFilled) {
             print("LOGIN OK")
+            let controller = storyboard?.instantiateViewControllerWithIdentifier("ListEstates") as! ListEstateViewController
+            presentViewController(controller, animated: true, completion: nil)
         } else {
             print("LOGIN NOT OK")
             let alert = UIAlertView()
