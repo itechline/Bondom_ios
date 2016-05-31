@@ -497,7 +497,92 @@ Jászladány, 2016.05.20
                     <view key="view" contentMode="scaleToFill" id="ALF-ia-jmd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxi-6U-mKV">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="Gls-ac-zKD"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-gK-0ei">
+                                <rect key="frame" x="16" y="72" width="568" height="528"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uks-f2-vFZ">
+                                        <rect key="frame" x="8" y="8" width="552" height="200"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z4b-up-udZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="9nX-QZ-DOd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budapest V. kerület" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqx-LJ-u41">
+                                                <rect key="frame" x="158" y="8" width="300" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="34o-gV-aNd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arany János utca" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gel-qe-1IX">
+                                                <rect key="frame" x="158" y="37" width="300" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVa-pP-vaJ">
+                                                <rect key="frame" x="158" y="66" width="386" height="68"/>
+                                                <string key="text">Loremipsum mindenek eladó házak meg ilyenek, rímelt is ez az üzenet, de nemtudom mit üzenek. Valami valami valaki, valamit valamizik valakinek</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-Dm-qnR">
+                                                <rect key="frame" x="495" y="8" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="5tL-Dm-qnR" firstAttribute="top" secondItem="uks-f2-vFZ" secondAttribute="topMargin" id="4y5-fP-yrk"/>
+                                            <constraint firstItem="Gel-qe-1IX" firstAttribute="leading" secondItem="uVa-pP-vaJ" secondAttribute="leading" id="7n9-bn-Nwj"/>
+                                            <constraint firstItem="cqx-LJ-u41" firstAttribute="trailing" secondItem="Gel-qe-1IX" secondAttribute="trailing" id="87E-4a-Qel"/>
+                                            <constraint firstItem="uVa-pP-vaJ" firstAttribute="top" secondItem="5tL-Dm-qnR" secondAttribute="bottom" constant="27" id="BJp-ox-4JG"/>
+                                            <constraint firstItem="cqx-LJ-u41" firstAttribute="leading" secondItem="z4b-up-udZ" secondAttribute="trailing" constant="8" symbolic="YES" id="CR9-Om-ZSL"/>
+                                            <constraint firstItem="5tL-Dm-qnR" firstAttribute="leading" secondItem="cqx-LJ-u41" secondAttribute="trailing" constant="37" id="FEs-Ia-t7s"/>
+                                            <constraint firstItem="5tL-Dm-qnR" firstAttribute="trailing" secondItem="uks-f2-vFZ" secondAttribute="trailingMargin" id="H46-pw-19b"/>
+                                            <constraint firstItem="z4b-up-udZ" firstAttribute="leading" secondItem="uks-f2-vFZ" secondAttribute="leading" id="NfQ-QO-kCk"/>
+                                            <constraint firstItem="Gel-qe-1IX" firstAttribute="top" secondItem="cqx-LJ-u41" secondAttribute="bottom" constant="8" symbolic="YES" id="OmQ-El-ZFW"/>
+                                            <constraint firstItem="uVa-pP-vaJ" firstAttribute="top" secondItem="Gel-qe-1IX" secondAttribute="bottom" constant="8" symbolic="YES" id="OxB-qZ-jJg"/>
+                                            <constraint firstItem="z4b-up-udZ" firstAttribute="top" secondItem="uks-f2-vFZ" secondAttribute="top" id="UZj-Wz-Rav"/>
+                                            <constraint firstItem="Gel-qe-1IX" firstAttribute="leading" secondItem="cqx-LJ-u41" secondAttribute="leading" id="eAa-zg-dIY"/>
+                                            <constraint firstItem="uVa-pP-vaJ" firstAttribute="centerY" secondItem="z4b-up-udZ" secondAttribute="centerY" id="euv-5f-nrB"/>
+                                            <constraint firstAttribute="bottom" secondItem="z4b-up-udZ" secondAttribute="bottom" id="mAa-Nk-DVS"/>
+                                            <constraint firstAttribute="height" constant="200" id="svq-8M-hqt"/>
+                                            <constraint firstItem="5tL-Dm-qnR" firstAttribute="trailing" secondItem="uVa-pP-vaJ" secondAttribute="trailing" id="t65-Ya-tzA"/>
+                                            <constraint firstItem="cqx-LJ-u41" firstAttribute="top" secondItem="5tL-Dm-qnR" secondAttribute="top" id="z2n-YR-v2b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uks-f2-vFZ" firstAttribute="top" secondItem="LUe-gK-0ei" secondAttribute="topMargin" id="H8n-kB-hjc"/>
+                                    <constraint firstItem="uks-f2-vFZ" firstAttribute="centerX" secondItem="LUe-gK-0ei" secondAttribute="centerX" id="QjU-mM-Ko8"/>
+                                    <constraint firstAttribute="bottom" secondItem="uks-f2-vFZ" secondAttribute="bottom" constant="320" id="WfO-uW-j5L"/>
+                                    <constraint firstItem="uks-f2-vFZ" firstAttribute="trailing" secondItem="LUe-gK-0ei" secondAttribute="trailingMargin" id="cxC-bM-fFz"/>
+                                    <constraint firstItem="uks-f2-vFZ" firstAttribute="leading" secondItem="LUe-gK-0ei" secondAttribute="leadingMargin" id="qai-bb-Ehs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LUe-gK-0ei" firstAttribute="bottom" secondItem="AHa-f0-muj" secondAttribute="top" id="86n-kY-j2C"/>
+                            <constraint firstItem="LUe-gK-0ei" firstAttribute="leading" secondItem="ALF-ia-jmd" secondAttribute="leadingMargin" id="Ar9-fF-qAi"/>
+                            <constraint firstItem="LUe-gK-0ei" firstAttribute="centerX" secondItem="bxi-6U-mKV" secondAttribute="centerX" id="OEN-zH-kc2"/>
+                            <constraint firstItem="bxi-6U-mKV" firstAttribute="top" secondItem="qFk-yW-wec" secondAttribute="bottom" constant="8" id="TJg-uB-TCi"/>
+                            <constraint firstItem="LUe-gK-0ei" firstAttribute="top" secondItem="bxi-6U-mKV" secondAttribute="bottom" id="Tem-6B-jM7"/>
+                            <constraint firstItem="bxi-6U-mKV" firstAttribute="leading" secondItem="ALF-ia-jmd" secondAttribute="leading" id="XFD-Bf-jza"/>
+                            <constraint firstAttribute="trailing" secondItem="bxi-6U-mKV" secondAttribute="trailing" id="bJL-Hf-5a9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbX-cw-6jI" userLabel="First Responder" sceneMemberID="firstResponder"/>
