@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Registration-->
+        <!--RegistrationScreen-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Registration" id="vXZ-lx-hvc" customClass="ViewController" customModule="Bonodom_IOS_0_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RegistrationScreen" id="vXZ-lx-hvc" customClass="ViewController" customModule="Bonodom_IOS_0_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -200,10 +200,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--LoginScreen-->
         <scene sceneID="gFC-UI-ZLa">
             <objects>
-                <viewController id="HUG-go-WOu" sceneMemberID="viewController">
+                <viewController title="LoginScreen" id="HUG-go-WOu" customClass="LoginViewController" customModule="Bonodom_IOS_0_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ual-BK-imX"/>
                         <viewControllerLayoutGuide type="bottom" id="oD9-wt-by1"/>
@@ -256,6 +256,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="9XW-1C-1Sb" kind="show" id="lUj-nG-sDP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-Cv-Pjy">
                                         <rect key="frame" x="8" y="160" width="552" height="40"/>
@@ -483,12 +486,30 @@ Jászladány, 2016.05.20
             </objects>
             <point key="canvasLocation" x="1068" y="418"/>
         </scene>
+        <!--ListEstates-->
+        <scene sceneID="dE5-Yu-cF0">
+            <objects>
+                <viewController title="ListEstates" id="9XW-1C-1Sb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qFk-yW-wec"/>
+                        <viewControllerLayoutGuide type="bottom" id="AHa-f0-muj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ALF-ia-jmd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbX-cw-6jI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="1150"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bonodom_logo" width="125" height="125"/>
         <image name="main_house" width="320" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oIk-I5-h5W"/>
+        <segue reference="OYv-9H-ovH"/>
     </inferredMetricsTieBreakers>
 </document>

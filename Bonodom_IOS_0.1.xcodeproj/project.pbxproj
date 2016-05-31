@@ -13,6 +13,7 @@
 		67200E711CFC99D70037B16F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67200E701CFC99D70037B16F /* Images.xcassets */; };
 		67200E741CFC99D70037B16F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67200E721CFC99D70037B16F /* LaunchScreen.xib */; };
 		67200E801CFC99D70037B16F /* Bonodom_IOS_0_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67200E7F1CFC99D70037B16F /* Bonodom_IOS_0_1Tests.swift */; };
+		674CE9271CFDA855000FF52F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CE9261CFDA855000FF52F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		67200E791CFC99D70037B16F /* Bonodom_IOS_0.1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bonodom_IOS_0.1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67200E7E1CFC99D70037B16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67200E7F1CFC99D70037B16F /* Bonodom_IOS_0_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bonodom_IOS_0_1Tests.swift; sourceTree = "<group>"; };
+		674CE9261CFDA855000FF52F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				67200E691CFC99D70037B16F /* AppDelegate.swift */,
 				67200E6B1CFC99D70037B16F /* ViewController.swift */,
 				67200E6D1CFC99D70037B16F /* Main.storyboard */,
+				674CE9261CFDA855000FF52F /* LoginViewController.swift */,
 				67200E701CFC99D70037B16F /* Images.xcassets */,
 				67200E721CFC99D70037B16F /* LaunchScreen.xib */,
 				67200E671CFC99D70037B16F /* Supporting Files */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674CE9271CFDA855000FF52F /* LoginViewController.swift in Sources */,
 				67200E6C1CFC99D70037B16F /* ViewController.swift in Sources */,
 				67200E6A1CFC99D70037B16F /* AppDelegate.swift in Sources */,
 			);
@@ -416,6 +420,7 @@
 				67200E851CFC99D70037B16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67200E861CFC99D70037B16F /* Build configuration list for PBXNativeTarget "Bonodom_IOS_0.1Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				67200E881CFC99D70037B16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
