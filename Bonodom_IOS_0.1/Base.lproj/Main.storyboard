@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="105" id="gLN-A9-XAS"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-5r-QaJ">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-5r-QaJ">
                                 <rect key="frame" x="16" y="141" width="568" height="329"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DLO-h3-bgJ">
@@ -99,7 +99,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-SO-lqh">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-SO-lqh">
                                         <rect key="frame" x="8" y="272" width="552" height="57"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <state key="normal" title="A Regisztráció gomb megnyomásával elfogadja a Felhasználási Feltételeket">
@@ -139,13 +139,13 @@
                                     <constraint firstItem="Ryr-1x-9vP" firstAttribute="trailing" secondItem="bOc-Iy-vbv" secondAttribute="trailing" id="t8Z-7z-ZpN"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_house" translatesAutoresizingMaskIntoConstraints="NO" id="U63-jx-hmQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="main_house" translatesAutoresizingMaskIntoConstraints="NO" id="U63-jx-hmQ">
                                 <rect key="frame" x="0.0" y="516" width="600" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="8T6-XY-6Qi"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-aM-0C7">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-aM-0C7">
                                 <rect key="frame" x="16" y="478" width="568" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xem-uI-Zbb"/>
@@ -168,6 +168,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="HUG-go-WOu" kind="show" id="9RD-Ax-8Vc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,10 +200,164 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gFC-UI-ZLa">
+            <objects>
+                <viewController id="HUG-go-WOu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ual-BK-imX"/>
+                        <viewControllerLayoutGuide type="bottom" id="oD9-wt-by1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W8V-Uj-1pq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonodom_logo" translatesAutoresizingMaskIntoConstraints="NO" id="c46-aM-KAx">
+                                <rect key="frame" x="0.0" y="28" width="600" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="bsa-wc-TXu"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-Xe-PGS">
+                                <rect key="frame" x="16" y="211" width="568" height="201"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHJ-Nv-siV">
+                                        <rect key="frame" x="8" y="8" width="552" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="aBd-Rw-8g8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jelszó" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Stk-q0-iG9">
+                                        <rect key="frame" x="8" y="46" width="552" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MG5-05-G4W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d2-Bi-V4k">
+                                        <rect key="frame" x="8" y="84" width="552" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="tV9-lY-A8X"/>
+                                        </constraints>
+                                        <state key="normal" title="facebook">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUn-4B-d7E">
+                                        <rect key="frame" x="8" y="122" width="552" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="IXH-XV-nrz"/>
+                                        </constraints>
+                                        <state key="normal" title="Bejelentkezés">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-Cv-Pjy">
+                                        <rect key="frame" x="8" y="160" width="552" height="30"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Elfelejtette jelszavát? ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Emlékeztető">
+                                                    <attributes>
+                                                        <color key="NSColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GUn-4B-d7E" firstAttribute="top" secondItem="2d2-Bi-V4k" secondAttribute="bottom" constant="8" symbolic="YES" id="042-fQ-7Hn"/>
+                                    <constraint firstItem="GUn-4B-d7E" firstAttribute="trailing" secondItem="BaI-Cv-Pjy" secondAttribute="trailing" id="0AA-AF-lz5"/>
+                                    <constraint firstItem="2d2-Bi-V4k" firstAttribute="leading" secondItem="GUn-4B-d7E" secondAttribute="leading" id="3sX-ye-VoV"/>
+                                    <constraint firstItem="2d2-Bi-V4k" firstAttribute="top" secondItem="Stk-q0-iG9" secondAttribute="bottom" constant="8" symbolic="YES" id="6Qu-GB-zHA"/>
+                                    <constraint firstItem="zHJ-Nv-siV" firstAttribute="leading" secondItem="Stk-q0-iG9" secondAttribute="leading" id="8Zy-Fd-Ykg"/>
+                                    <constraint firstItem="zHJ-Nv-siV" firstAttribute="top" secondItem="OBH-Xe-PGS" secondAttribute="topMargin" id="FDU-bH-zT0"/>
+                                    <constraint firstItem="GUn-4B-d7E" firstAttribute="leading" secondItem="BaI-Cv-Pjy" secondAttribute="leading" id="GLy-jb-MiD"/>
+                                    <constraint firstItem="2d2-Bi-V4k" firstAttribute="trailing" secondItem="Stk-q0-iG9" secondAttribute="trailing" id="NsX-J4-chM"/>
+                                    <constraint firstItem="zHJ-Nv-siV" firstAttribute="leading" secondItem="OBH-Xe-PGS" secondAttribute="leadingMargin" id="Rfg-zQ-zNo"/>
+                                    <constraint firstItem="Stk-q0-iG9" firstAttribute="top" secondItem="zHJ-Nv-siV" secondAttribute="bottom" constant="8" symbolic="YES" id="RvX-c0-Ty2"/>
+                                    <constraint firstAttribute="bottom" secondItem="BaI-Cv-Pjy" secondAttribute="bottom" constant="11" id="Ts5-Wt-RSY"/>
+                                    <constraint firstItem="BaI-Cv-Pjy" firstAttribute="top" secondItem="GUn-4B-d7E" secondAttribute="bottom" constant="8" symbolic="YES" id="XJc-FQ-2NL"/>
+                                    <constraint firstItem="2d2-Bi-V4k" firstAttribute="trailing" secondItem="OBH-Xe-PGS" secondAttribute="trailingMargin" id="bsK-sr-VZH"/>
+                                    <constraint firstItem="GUn-4B-d7E" firstAttribute="trailing" secondItem="2d2-Bi-V4k" secondAttribute="trailing" id="gH4-Mb-uFR"/>
+                                    <constraint firstItem="2d2-Bi-V4k" firstAttribute="leading" secondItem="Stk-q0-iG9" secondAttribute="leading" id="qkw-jB-pwQ"/>
+                                    <constraint firstItem="zHJ-Nv-siV" firstAttribute="trailing" secondItem="Stk-q0-iG9" secondAttribute="trailing" id="sra-G6-UgB"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_house" translatesAutoresizingMaskIntoConstraints="NO" id="bQX-yi-cem">
+                                <rect key="frame" x="0.0" y="516" width="600" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="SDr-U1-AQc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tuo-Vc-QjL">
+                                <rect key="frame" x="16" y="420" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wMG-d9-1gF"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Még nincs fiókja? ">
+                                            <attributes>
+                                                <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Regisztráljon">
+                                            <attributes>
+                                                <color key="NSColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="oIk-I5-h5W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bQX-yi-cem" firstAttribute="leading" secondItem="W8V-Uj-1pq" secondAttribute="leading" id="0dA-FO-cOS"/>
+                            <constraint firstItem="OBH-Xe-PGS" firstAttribute="top" secondItem="c46-aM-KAx" secondAttribute="bottom" constant="8" symbolic="YES" id="O6M-fg-rZC"/>
+                            <constraint firstAttribute="trailing" secondItem="c46-aM-KAx" secondAttribute="trailing" id="T5r-Pd-0C7"/>
+                            <constraint firstItem="c46-aM-KAx" firstAttribute="trailing" secondItem="bQX-yi-cem" secondAttribute="trailing" id="YYy-Fo-3XM"/>
+                            <constraint firstItem="tuo-Vc-QjL" firstAttribute="trailing" secondItem="OBH-Xe-PGS" secondAttribute="trailing" id="Zbq-a7-aAy"/>
+                            <constraint firstItem="OBH-Xe-PGS" firstAttribute="leading" secondItem="W8V-Uj-1pq" secondAttribute="leadingMargin" id="bdZ-ZS-Yfp"/>
+                            <constraint firstItem="tuo-Vc-QjL" firstAttribute="top" secondItem="OBH-Xe-PGS" secondAttribute="bottom" constant="8" symbolic="YES" id="c7j-93-p5I"/>
+                            <constraint firstItem="OBH-Xe-PGS" firstAttribute="leading" secondItem="tuo-Vc-QjL" secondAttribute="leading" id="knz-cq-TAa"/>
+                            <constraint firstItem="bQX-yi-cem" firstAttribute="centerX" secondItem="tuo-Vc-QjL" secondAttribute="centerX" id="nQn-bh-VgA"/>
+                            <constraint firstItem="c46-aM-KAx" firstAttribute="leading" secondItem="bQX-yi-cem" secondAttribute="leading" id="qOH-2h-dZR"/>
+                            <constraint firstItem="bQX-yi-cem" firstAttribute="top" secondItem="tuo-Vc-QjL" secondAttribute="bottom" constant="66" id="rqc-4K-EbY"/>
+                            <constraint firstItem="c46-aM-KAx" firstAttribute="top" secondItem="Ual-BK-imX" secondAttribute="bottom" constant="8" symbolic="YES" id="tAl-yw-UZN"/>
+                            <constraint firstItem="bQX-yi-cem" firstAttribute="bottom" secondItem="oD9-wt-by1" secondAttribute="top" id="ztX-Ce-pq2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eR-2a-aD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="1108"/>
+        </scene>
         <!--ASZF-->
         <scene sceneID="fE6-8L-FRp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EBC-DK-tsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="ASZF" id="0WC-lD-aiL" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="04p-6C-zD6"/>
@@ -210,37 +367,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCT-4T-vvx">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem id="2cU-Jk-07T">
-                                        <barButtonItem key="leftBarButtonItem" title="Vissza" id="dA3-N9-L1W">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-FJ-VWb">
-                                <rect key="frame" x="16" y="64" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUd-GV-k4i">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="bUu-l9-21p"/>
+                                </constraints>
+                                <state key="normal" title="Vissza">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="OYv-9H-ovH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-FJ-VWb">
+                                <rect key="frame" x="16" y="66" width="568" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">A Bonodom alkalmazás Szolgáltatás Általános Szerződési Feltételei
+
+A következőkben ismertetett Általános Szerződési Feltételek (a továbbiakban: „ÁSZF”) az ITECHLINE Kft. (5055, Jászladány Táncsics M 54/a.; a továbbiakban: „Szolgáltató”) által üzemeltetett, BONODOM applikációban elérhető ingatlan hirdetési szolgáltatás igénybevételéhez kapcsolódóan a Felhasználók és a Szolgáltató (lásd. lentebb) jogait és kötelezettségeit tartalmazza.
+
+1. Általános meghatározások
+ÁSZF vagy a Szolgáltatás ÁSZF-je: a jelen dokumentum
+Felhasználó: az alkalmazásban elérhető szolgáltatást igénybe vevő személy, aki az alkalmazásba regisztrált és oda feltölti az értékesíteni kívánt ingatlan adatait.
+Alkalmazás: a Google Play áruházban elérhető alkalmazás
+Szoftver: a Szolgáltatást üzemeltető szoftver.
+Szolgáltató: az ITECHLINE Kft. (5055, Jászladány Táncsics M 54/a)
+Szolgáltatás: a Szolgáltató által az alkalmazáson keresztül a Felhasználó részére nyújtott, és a jelen 
+ÁSZF-ben ismertetett szolgáltatás.
+
+2.  A Szolgáltató által nyújtott Szolgáltatás leírása
+2.1 A Szolgáltatás keretében a Szolgáltató lehetőséget biztosít a Felhasználó számára, hogy
+a,  az alkalmazás felületére a Felhasználó által értékesíteni kívánt ingatlan adatait, fényképeit
+feltöltse,
+b,  az alkalmazásban megadja azokat a paramétereket, amelyeknek megfelelő ingatlant keres;
+továbbá
+c,  a Felhasználó igénye alapján a Felhasználó részére hirdetésfigyelő szolgáltatást nyújt. A
+hirdetésfigyelési szolgáltatás keretében a Szolgáltató a Felhasználó által megadott e-mail
+címre megküldi az alkalmazásba feltöltött mindazon ingatlanok linkjét, amelyek a Felhasználó
+által az alkalmazásban megadott keresési feltételeknek megfelel.
+2.2 Felhasználó az alkalmazásba történő regisztrációjával a Szolgáltatás ÁSZF-jét kifejezetten elfogadja.
+
+3. A Szolgáltató által nyújtott Szolgáltatás igénybevétele
+3.1 Felhasználó a Szolgáltatásba saját e-mail címével, Facebook ill. Google accountjával tud regisztrálni. Felhasználó tudomásul veszi, hogy regisztrációja elküldésével mind a Szolgáltatás ÁSZF-jét és Adatkezelési Szabályzatát elfogadja.
+3.2 Felhasználó ingyenesen legfeljebb 1 ingatlanra vonatkozó hirdetést tölthet fel egyszerre az alkalmazásba, és teheti elérhetővé az alkalmazás használói számára. Amennyiben kiderül, hogy egy Felhasználó – akár több felhasználó névvel vagy e-mail címmel – az itt megadottnál több ingatlan adatait is feltöltötte az alkalmazásba, ill. ott elérhetővé tette, úgy a Szolgáltatónak joga van Felhasználó valamennyi hirdetését törölni.
+3.3 Felhasználó az alkalmazásba feltöltheti az általa keresett ingatlan adatait. Ehhez kapcsolódóan a
+Felhasználó az alkalmazásban hirdetésfigyelő szolgáltatás nyújtását rendelheti meg. 
+3.4 A Felhasználó bármikor módosíthatja az általa az alkalmazásban illetve a regisztráció során megadott adatokat, a „Hirdetésem”, a személyes adatokat a „Személyes” menüpontban.
+3.5 Nem tölthetők fel hirdetéssel kapcsolatban az alkalmazásba olyan képek, amelyek:
+a, nem a Felhasználó tulajdonát képezik, és felhasználásukra a jogosult felhatalmazást nem adott,
+b, nem a meghirdetett ingatlant és annak közvetlen környezetét ábrázolják 
+c, nem megfelelő felbontásúak, minőségűek, torzítottak,
+d, több fotó montázsából jött létre,
+e, bármilyen a képre rászerkesztett feliratot, szöveget, linket, elérhetőségi adatot, figyelemfelkeltő grafikát, egyéb megjelölést tartalmaznak. 
+3.6 A Felhasználó által feltöltött adatok, azoknak a Felhasználó által az alkalmazásban történt törléséig, de legfeljebb azok feltöltésétől számított 24 hónapig történik a tárolás.
+
+4. Felelősségi szabályok
+4.1 A Felhasználó hirdetéseinek ill. a Felhasználó által az alkalmazásba feltöltött adatok valóságtartalmáért és helytállóságáért kizárólag a Felhasználó felelős. A Szolgáltató nem felel harmadik személyeknek a Felhasználóval szemben érvényesíteni kívánt igényéért, ide értve a Felhasználó által feltöltött adatoktól való eltérést, illetve a feltöltött adatok valóságtartalmát is. A Felhasználó felelősségi és helytállási kötelezettségének a körébe esik, ha az alkalmazásban közzétett adatok és/vagy paraméterekhez képest később változások következnek be. Ilyen esetekben a felelősség kizárólag Felhasználót terheli. A beérkező esetleges reklamációkért (ideértve bármely bírságot, kártérítést és költséget) a felelősséget teljes egészében Felhasználó vállalja.
+4.2 Az adatszolgáltatás, a hibajavítás illetőleg az adatokban bekövetkező változásokkal
+kapcsolatosan módosítások Felhasználó általi késedelmes teljesítése esetén az alkalmazásban
+megjelenő hiányos vagy hibás adatok közzétételéért Szolgáltatót semmilyen felelősséget nem
+vállal.
+4.3 A Szolgáltatót nem terheli semmilyen felelősség azért, hogy a jelen ÁSZF szerinti Szolgáltatása
+révén létrejön-e tényleges szerződés Felhasználó és harmadik személyek között.
+4.4 A Szolgáltató nem felel a Felhasználó által harmadik személynek okozott károkért.
+4.5 A Felhasználó által az alkalmazásba feltöltött képek, videók, adatok (a továbbiakban: adatok)
+Felhasználó tulajdonát képezik. Szolgáltató jogosult a Felhasználó által az alkalmazásba feltöltött adatokat marketing kommunikációi során felhasználni.
+4.6 Az alkalmazásba feltöltött adatok helyadat meghatározására a Szolgáltató külső partnert vesz igénybe. A Szolgáltató nem vállal felelősséget az így kapott adatok hibás vagy nem helytálló voltáért.
+4.7 Szolgáltató az alkalmazásra valamint a Szoftverre vonatkozó szerzői jogok jogosultja, és nincs
+semmilyen harmadik személynek olyan joga, amely a Szolgáltatót vagy a Felhasználót ezek
+megfelelő használatában korlátozhatná, vagy a használatot akadályozhatná.
+4.8 Felhasználó köteles tartózkodni minden olyan magatartástól, amely akár közvetlenül, akár
+közvetve alkalmas arra, hogy az alkalmazásra illetve a Szoftverre, mint szerzői műre vonatkozó
+szerzői jogokat sértsen. Szolgáltató a jelen pontban foglaltak megsértése esetén a Felhasználóval szemben kártérítési igénnyel léphet fel.
+4.9 A Felhasználó számára tilos bármilyen olyan rendszer vagy megoldás használata, amely az alkalmazásban nyújtott Szolgáltatások korlátozását vagy leállását célozza, azt lehetővé teszi, vagy
+azt eredményezheti, vagy amely egyébként veszélyezteti az alkalmazás rendeltetésszerű működtetését. Szolgáltató a jelen pontban foglaltak megsértése esetén a Felhasználóval szemben kártérítési igénnyel léphet fel.
+
+5. Vegyes rendelkezések
+5.1 A Szolgáltató nem felelős semmilyen kárért, amely az alkalmazásra való csatlakozás illetve a
+Szolgáltatás használata miatt a Felhasználónál esetlegesen bekövetkezett. A Felhasználót
+terheli a számítógépe, illetve az azon található adatok védelmének kötelezettsége.
+5.2 A Szolgáltató bármikor jogosult a jelen ÁSZF feltételeit egyoldalúan módosítani. Az esetleges
+módosítás az alkalmazásban való megjelenéssel egyidejűleg lép hatályba.
+5.3 Minden kommunikáció nyelve magyar.
+5.4 A jelen ÁSZF-ben nem szabályozott kérdésekben a magyar jog, különösen a Polgári
+Törvénykönyvről szóló 2013. évi V. törvény rendelkezései irányadóak.
+5.5 Az esetleges vitás kérdések rendezésénél a felek a hatályos jogszabályok előírásait tekintik irányadónak. Ha felek a vitát egyeztetéssel nem tudják rendezni, úgy jogvita esetére Felek a hatályos jogszabályok alapján hatáskörrel és illetékességgel rendelkező rendes bíróság eljárásának vetik alá magukat.
+
+Jászladány, 2016.05.20
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kPb-FJ-VWb" firstAttribute="trailing" secondItem="97Y-XT-pE3" secondAttribute="trailingMargin" id="9rs-XN-eVJ"/>
+                            <constraint firstItem="NUd-GV-k4i" firstAttribute="leading" secondItem="97Y-XT-pE3" secondAttribute="leadingMargin" id="Hij-hn-jwd"/>
+                            <constraint firstItem="kPb-FJ-VWb" firstAttribute="top" secondItem="NUd-GV-k4i" secondAttribute="bottom" constant="8" symbolic="YES" id="QIn-fR-QzV"/>
+                            <constraint firstItem="NUd-GV-k4i" firstAttribute="top" secondItem="04p-6C-zD6" secondAttribute="bottom" constant="8" symbolic="YES" id="bBg-pi-kV8"/>
+                            <constraint firstItem="kPb-FJ-VWb" firstAttribute="bottom" secondItem="A3s-Si-lCo" secondAttribute="top" id="cNr-K0-65V"/>
+                            <constraint firstItem="kPb-FJ-VWb" firstAttribute="leading" secondItem="NUd-GV-k4i" secondAttribute="leading" id="m5q-vV-UIi"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBC-DK-tsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="418"/>
+            <point key="canvasLocation" x="1068" y="418"/>
         </scene>
     </scenes>
     <resources>
         <image name="bonodom_logo" width="125" height="125"/>
         <image name="main_house" width="320" height="45"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oIk-I5-h5W"/>
+    </inferredMetricsTieBreakers>
 </document>
