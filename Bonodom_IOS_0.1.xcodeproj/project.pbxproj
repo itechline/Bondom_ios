@@ -18,6 +18,7 @@
 		E44AE81A1CFECC550049A746 /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44AE8171CFECC550049A746 /* KYDrawerController.swift */; };
 		E44AE81B1CFECC550049A746 /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44AE8181CFECC550049A746 /* KYEmbedDrawerControllerSegue.swift */; };
 		E44AE81C1CFECC550049A746 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44AE8191CFECC550049A746 /* KYEmbedMainControllerSegue.swift */; };
+		E44AE81E1CFF00640049A746 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44AE81D1CFF00640049A746 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E44AE8171CFECC550049A746 /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
 		E44AE8181CFECC550049A746 /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
 		E44AE8191CFECC550049A746 /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		E44AE81D1CFF00640049A746 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				67200E701CFC99D70037B16F /* Images.xcassets */,
 				67200E721CFC99D70037B16F /* LaunchScreen.xib */,
 				67200E671CFC99D70037B16F /* Supporting Files */,
+				E44AE81D1CFF00640049A746 /* MenuViewController.swift */,
 			);
 			path = Bonodom_IOS_0.1;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				674CE9291CFDB194000FF52F /* ListEstateViewController.swift in Sources */,
 				67200E6A1CFC99D70037B16F /* AppDelegate.swift in Sources */,
 				E44AE81A1CFECC550049A746 /* KYDrawerController.swift in Sources */,
+				E44AE81E1CFF00640049A746 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
