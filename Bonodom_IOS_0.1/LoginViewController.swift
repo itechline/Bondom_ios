@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         
         if (isFilled) {
             print("LOGIN OK")
-            let controller = storyboard?.instantiateViewControllerWithIdentifier("ListEstates") as! ListEstateViewController
+            let controller = storyboard?.instantiateViewControllerWithIdentifier("MainPage") as! KYDrawerController
             presentViewController(controller, animated: true, completion: nil)
         } else {
             print("LOGIN NOT OK")
